@@ -16,6 +16,14 @@ exports.up = (pgm) => {
       type: "VARCHAR(50)",
       notNull: true,
     },
+    createdAt: {
+      type: "timestamp",
+      notNull: true,
+    },
+    updatedAt: {
+      type: "timestamp",
+      notNull: true,
+    },
   });
 
   pgm.addConstraint(
